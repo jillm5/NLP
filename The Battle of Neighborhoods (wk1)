@@ -1,0 +1,24 @@
+PROBLEM DEFINITION
+Compare London and New York neighborhoods in terms of : 
+- homogeneity - how homogenious or diverse the segments are in these two cities
+- the importance of parks, which city has more segments where parks are feautured 
+   more prominantly by being present in more clusters and in higher positions
+
+DATA SOURCE
+Pull postal code and borough information for both cities using Wiki pages: 
+ - https://en.wikipedia.org/wiki/London_postal_district
+ - https://www.health.ny.gov/statistics/cancer/registry/appendix/neighborhoods.htm
+Use Foursquare to pull the top 10 venues against each neighbourhoods
+
+METHODOLOGY
+Use optimisation to find optimal number of clusters for London and New York to see which city has naturally higher number of clusters. 
+This is a proxy how homogenious the Neighborhoods are in London and New York. City with highest optimal number of clusters will be 
+be considered as more diverse in terms of venue category and location.
+
+Analyse resultant clusters for number of types Parks comes in top positions and across numebr of clusters and produce aggregated 
+comparison tables across two-dimensions: 
+- number of times Parks is listed by rank (e.g. number of parks in position 1, in position 2 etc)#
+- number of Neighbours where Parks are listed in top 5 positions
+
+These counts will be considered to understand which city has parks being more prominantly feautured in the clusters by venue categories. 
+This will prove which city is more 'green'.
